@@ -1,0 +1,122 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a PhD student in the Computational Neuroimaging Lab at Biobizkaia Health Research Institute. 
+    I obtained my bachelor's degree in Biomedical Engineering in Mondragon Unibertsitatea in 2021, where
+    I also got my master's degree in Biomedical Technologies, in 2023. After finalizing my master's,
+    I worked developing new features for the spinal surgery robot Alaya at Cyber Surgery S.L, in Donostia.
+    My research mainly focuses on aging and neurodegeneration, building new tools for standardizing age
+    modeling methods. I am also very interested in lesion network mapping in acute lesions and neurodegeneration.
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="PhD Student in Biomedical Research"
+      subtitle="Started on September 2023 in Biobizkaia HRI, Barakaldo, Basque Country"
+    >
+      My main projects focus on the identification of lifestyle factors that contribute to healthy aging trajectories, the characterization of 
+      dysconnectivity in preclinical dementia patients; and the development of AgeML:
+    </TimeLineElement>
+    <TimeLineElement
+      title="Google Summer of Code 2024 Student"
+      subtitle="Summer of 2024"
+    >
+      Contributing to Diffusion Imaging in Python (DIPY), for project: Conditional Tractogram Generation Based on age and neurodegeneration using 
+      autoencoder networks. The objective was to integrate synthetic tractogram generation capabilities into DIPY, allowing researchers in the dMRI 
+      field to obtain benchmark data for tractometry and synthetic control or pathological subjects for other kinds of studies.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Artificial Intelligence Researcher"
+      subtitle="From Oct 2022 to Sep 2023 at Cyber Surgery S.L, Donostia, Basque Country"
+    >
+      Part of the Applied Research Team, investigating generative image-to-image models for reducing radiation in spinal surgery patients and for 
+      automatic surgery planning.
+    </TimeLineElement>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="PhD Student in Biomedical Research"
+      subtitle="Started 2023, ongoing, at Biobizkaia HRI, Barakaldo, Basque Country."
+    />
+    <TimeLineElement
+      title="Master's Degree in Biomedical Technologies"
+      subtitle="2017 to 2018 at Mondragon Unibertsitatea, Arrasate, Basque Country. Graduated with honors."
+    />
+    <TimeLineElement
+      title="Bachelor's Degree in Biomedical Engineering"
+      subtitle="2017 to 2021 at Mondragon Unibertsitatea, Arrasate, Basque Country. Graduated with honors."
+    />
+    
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Research Internships</div>
+  </div> -->
+
+  <!-- <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Visiting student at the Applied and Theoretical Neuroanatomy Group"
+      subtitle="From Nov 2022 to Nov 2022 at Institut Pasteur, Paris, France"
+    >
+      During the stay, I implemented a methodology for generating multimodal brain-disconnectivity maps given a stroke lesion, based on normative data. 
+    </TimeLineElement>
+    <TimeLineElement
+      title="Visiting student at the Movement Control & Neuroplasticity Group"
+      subtitle="From Oct 2020 to Dec 2020 at KU Leuven, Leuven, Belgium"
+    >
+     During the stay, I was working on integrating a neuroimaging meta-analysis tool, for describing from a cognitive perspective, brain circuits disrupted after a stroke. 
+    </TimeLineElement>
+    
+  </div> -->
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/" target="_blank">Machine learning in Python with scikit-learn (Inria, 36h)</a>
+    </li>
+    <li>
+      <a href="https://www.win.ox.ac.uk/about/training/oxford-clinical-neuroimaging-course" target="_blank">The Oxford Clinical Neuroimaging Course (University of Oxford, 36h)</a>
+    </li>
+  </ul> -->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Technical Skills</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>Software Engineering</li>
+    <li>3D Slicer</li>
+    <li>MATLAB</li>
+    <li>Bash Scripting</li>
+    <li>HPC-Slurm</li>
+    <li>Version Control - Git</li>
+    <li>Virtualization - Docker-Apptainer</li>
+    <li>Machine Learning</li>
+    <li>Statistics</li>
+    <li>FSL</li>
+    <!-- <li>Freesurfer</li>
+    <li>MRtrix3</li>
+    <li>ANTs</li>
+    <li>AFNI</li> -->
+    <li>Nilearn</li>
+    <!-- <li>fMRIPrep</li> -->
+  </ul>
+</BaseLayout>
